@@ -10,7 +10,7 @@
             <i class="fab fa-youtube w-full h-full text-sm" aria-hidden="true"></i>
           </a>
         </div>
-        <img src="<%= image %>" class="max-h-[400px] w-full object-contain object-center" />
+        <img src="<%= image %>" class="h-[500px] w-full object-contain object-center" />
       </div>
     <% }) %>
   </div>
@@ -19,7 +19,7 @@
   <div class="swiper-wrapper">
     <% images.forEach((image) => {%>
       <div class="swiper-slide">
-        <img src="<%= image %>" />
+        <img src="<%= image %>" class="h-[100px] w-full object-cover object-center"/>
       </div>
     <% }) %>
   </div>

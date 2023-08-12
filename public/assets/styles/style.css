@@ -935,11 +935,17 @@ video {
 .h-9{
   height: 2.25rem;
 }
+.h-\[100px\]{
+  height: 100px;
+}
 .h-\[250px\]{
   height: 250px;
 }
 .h-\[400px\]{
   height: 400px;
+}
+.h-\[500px\]{
+  height: 500px;
 }
 .h-\[80px\]{
   height: 80px;
@@ -951,17 +957,8 @@ video {
 .h-full{
   height: 100%;
 }
-.h-\[500px\]{
-  height: 500px;
-}
-.h-\[100px\]{
-  height: 100px;
-}
 .max-h-\[375px\]{
   max-height: 375px;
-}
-.max-h-\[400px\]{
-  max-height: 400px;
 }
 .max-h-\[500px\]{
   max-height: 500px;
@@ -1390,6 +1387,9 @@ video {
 .p-8{
   padding: 2rem;
 }
+.p-16{
+  padding: 4rem;
+}
 .px-10{
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1430,6 +1430,10 @@ video {
   padding-left: 2%;
   padding-right: 2%;
 }
+.px-\[20\%\]{
+  padding-left: 20%;
+  padding-right: 20%;
+}
 .px-\[5\%\]{
   padding-left: 5%;
   padding-right: 5%;
@@ -1469,10 +1473,6 @@ video {
 .py-\[3px\]{
   padding-top: 3px;
   padding-bottom: 3px;
-}
-.px-\[20\%\]{
-  padding-left: 20%;
-  padding-right: 20%;
 }
 .pb-10{
   padding-bottom: 2.5rem;
@@ -2199,20 +2199,6 @@ video {
 
 
 
-  .md\:px-\[10\%\]{
-    padding-left: 10%;
-    padding-right: 10%;
-  }
-
-
-
-  .md\:px-\[20\%\]{
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-
-
-
   .md\:pl-20{
     padding-left: 5rem;
   }
@@ -2437,13 +2423,6 @@ video {
 
 
 
-  .lg\:px-\[30\%\]{
-    padding-left: 30%;
-    padding-right: 30%;
-  }
-
-
-
   .lg\:px-\[9\%\]{
     padding-left: 9%;
     padding-right: 9%;
@@ -2454,13 +2433,6 @@ video {
   .lg\:py-20{
     padding-top: 5rem;
     padding-bottom: 5rem;
-  }
-
-
-
-  .lg\:px-\[20\%\]{
-    padding-left: 20%;
-    padding-right: 20%;
   }
 
 

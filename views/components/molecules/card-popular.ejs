@@ -1,4 +1,4 @@
-<div class="w-full flex flex-col shadow-md">
+<div class="w-full flex flex-col shadow-md hover:-translate-y-2 transition-all duration-500">
     <!-- TOP CARD-->
     <div class="relative">
       <div class="bg-emerald-700 absolute right-0 mt-5 ">
@@ -22,7 +22,9 @@
               </div>
               <!-- Title Card -->
               <div class = " mt-9 mb-4">
-                <p class="text-2xl font-raleway font-bold font-midnight"><%= place.packageTitle ;%></p>
+                <a href="/tours/<%= place.location %>" class="hover:text-emerald-500" >
+                  <p class="text-2xl font-raleway font-bold font-midnight"><%= place.packageTitle ;%></p>
+                </a>
               </div>
               <!--Review/Ratings-->
               <div class = " mb-4 flex flex-row">
@@ -43,8 +45,10 @@
       <div class="flex flex-row mt-7 border-t-2">
           <div class = "flex-1 flex items-center justify-center border-r-2">
             <button class="flex-shrink-0 py-5 font-semibold flex items-center gap-102 bg-transparent focus:outline-none  group">
+              <a href="/booking">
                 <span class="group-10hover:text-dodger-blue">Book Now</span>
                 <i class="fas fa-arrow-right p-1 text-emerald-700 group-10 hover:text-dodger-blue"></i>
+              </a>
             </button>
           </div>
           <div class="flex-1 flex items-center justify-center">

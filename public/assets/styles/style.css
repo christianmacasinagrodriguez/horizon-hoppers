@@ -1860,6 +1860,9 @@ video {
 .hover\:bg-opacity-100:hover{
   --tw-bg-opacity: 1;
 }
+.hover\:bg-opacity-30:hover{
+  --tw-bg-opacity: 0.3;
+}
 .hover\:px-6:hover{
   padding-left: 1.5rem;
   padding-right: 1.5rem;

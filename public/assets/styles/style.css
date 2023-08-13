@@ -966,9 +966,6 @@ video {
 .h-full{
   height: 100%;
 }
-.h-2{
-  height: 0.5rem;
-}
 .min-h-screen{
   min-height: 100vh;
 }
@@ -990,9 +987,6 @@ video {
 .w-3\/5{
   width: 60%;
 }
-.w-36{
-  width: 9rem;
-}
 .w-5{
   width: 1.25rem;
 }
@@ -1002,14 +996,11 @@ video {
 .w-7{
   width: 1.75rem;
 }
-.w-72{
-  width: 18rem;
-}
-.w-80{
-  width: 20rem;
-}
 .w-9{
   width: 2.25rem;
+}
+.w-\[100\%\]{
+  width: 100%;
 }
 .w-\[80px\]{
   width: 80px;
@@ -1023,21 +1014,6 @@ video {
 }
 .w-screen{
   width: 100vw;
-}
-.w-\[40\%\]{
-  width: 40%;
-}
-.w-\[80\%\]{
-  width: 80%;
-}
-.w-\[20\%\]{
-  width: 20%;
-}
-.w-\[100\%\]{
-  width: 100%;
-}
-.w-\[90\%\]{
-  width: 90%;
 }
 .max-w-2xl{
   max-width: 42rem;
@@ -1169,9 +1145,6 @@ video {
 .gap-x-6{
   -moz-column-gap: 1.5rem;
        column-gap: 1.5rem;
-}
-.gap-y-2{
-  row-gap: 0.5rem;
 }
 .gap-y-20{
   row-gap: 5rem;
@@ -1336,12 +1309,6 @@ video {
 .bg-opacity-95{
   --tw-bg-opacity: 0.95;
 }
-.bg-opacity-50{
-  --tw-bg-opacity: 0.5;
-}
-.bg-opacity-25{
-  --tw-bg-opacity: 0.25;
-}
 .bg-\[url\(\'https\:\/\/demo\.bosathemes\.com\/html\/travele\/assets\/images\/img16\.jpg\'\)\]{
   background-image: url('https://demo.bosathemes.com/html/travele/assets/images/img16.jpg');
 }
@@ -1403,9 +1370,6 @@ video {
 }
 .p-8{
   padding: 2rem;
-}
-.p-0{
-  padding: 0px;
 }
 .px-10{
   padding-left: 2.5rem;
@@ -1562,9 +1526,6 @@ video {
 }
 .text-center{
   text-align: center;
-}
-.align-bottom{
-  vertical-align: bottom;
 }
 .font-baloo{
   font-family: Baloo 2, cursive;
@@ -2140,6 +2101,12 @@ video {
 
 
 
+  .md\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
+
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2148,12 +2115,6 @@ video {
 
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-
-
-  .md\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
 
@@ -2178,18 +2139,6 @@ video {
 
   .md\:bg-transparent{
     background-color: transparent;
-  }
-
-
-
-  .md\:p-10{
-    padding: 2.5rem;
-  }
-
-
-
-  .md\:p-8{
-    padding: 2rem;
   }
 
 
@@ -2451,6 +2400,12 @@ video {
 
 
 
+  .lg\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -2469,12 +2424,6 @@ video {
 
 
 
-  .lg\:grid-cols-2{
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-
-
   .lg\:flex-row{
     flex-direction: row;
   }
@@ -2483,18 +2432,6 @@ video {
 
   .lg\:gap-4{
     gap: 1rem;
-  }
-
-
-
-  .lg\:p-10{
-    padding: 2.5rem;
-  }
-
-
-
-  .lg\:p-8{
-    padding: 2rem;
   }
 
 

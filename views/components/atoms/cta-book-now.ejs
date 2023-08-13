@@ -1,5 +1,5 @@
 <div class="flex flex-row justify-center items-center">
-    <% const route = (content === "Continue Reading" || content === "More Destination" || content === "Book Now") ? "/destination" : ("/tours/" + content.toLowerCase()) %>
+    <% const route = (content === "Continue Reading" || content === "More Destination" || content === "Book Now" || content === "View All Packages") ? "/destination" : ("/tours/" + content.toLowerCase()) %>
     <a href=<%= route %> class="w-fit h-fit px-6 py-3 text-white font-medium bg-emerald-700 mt-4 uppercase"><%= content %></a>
 </div>
 

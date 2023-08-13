@@ -2,10 +2,10 @@
 <%- include('../components/molecules/header-molecule.ejs') %>
 <%- include('../components/molecules/banner.ejs', {pagename: "Booking"})%>
 
-    <div class = "w-full h-full flex justify-center items-center">
-        <div class = "bg-white h-full p-10  flex flex-col md:flex-row lg:flex-row gap-10">
+    <div class = "w-full h-full flex justify-center items-center box-border">
+        <div class = "bg-white w-full h-full p-10 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-10">
           <!--FORM-->
-            <div class = "bg-gray-100 pb-12 flex w-fit ">
+            <div class = "bg-gray-100 pb-12 flex w-full ">
               <!--FORM DETAILS-->
               <div class = "h-full w-full sm:flex-col ">
                 <form>
@@ -20,60 +20,54 @@
                   <h2 class =" pt-7 p-2 text-3xl font-bold uppercase">your details</h2>
                   </div>
                   <!--Email-->
-                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 gap-y-2 ">
-                    <div class = " ">
+                  <div id="FullName" class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+                    <div class = "">
                       <!-- First Name-->
                       <div class = "mb-3">
                         <label class = ""> First Name</label><br>
                       </div>
-                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                      <input type="text" class = " w-[100%] h-10 border p-1 "name="">
                     </div>
                     <div class = " ">
                       <!-- Last Name-->
                       <div class = "mb-3">
                         <label class = "">Last Name</label><br>
                       </div>
-                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
                     </div>
                      
                   </div>
 
 
                   <!--Email-->
-                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                  <div id="FullName" class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
                     <div class = " ">
                       <!-- First Name-->
                       <div class = "mb-3">
                         <label class = "">Email</label><br>
                       </div>
-                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
                     </div>
                     <div class = " ">
                       <!-- Last Name-->
                       <div class = "mb-3">
                         <label class = "">Confirm Email</label><br>
                       </div>
-                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
                     </div>
                      
                   </div>
 
                   <!--Phone-->
-                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                  <div id="FullName" class="p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
                     <div class = " ">
                       <!-- First Name-->
                       <div class = "mb-3">
                         <label class = "">Phone</label><br>
                       </div>
-                      <input type="text" class = " w-72 h-10 border p-1 "name="">
-                    </div>
-                    
-                     
-                  </div>
-
-
-                
-                  
+                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
+                    </div>   
+                  </div>         
                 </form>
 
                 <!--PAYMENT INFORMATION-->
@@ -86,7 +80,7 @@
                         <path d="M10 8h3a1 1 0 0 1 1 1v2a1 1 0 0 1 -1 1h-2a1 1 0 0 0 -1 1v2a1 1 0 0 0 1 1h3" />
                       </svg>
                     </div>
-                  <h2 class =" pt-7 p-2 text-3xl font-bold uppercase">payment information</h2>
+                  <h2 class =" w-full pt-7 p-2 text-3xl font-bold uppercase">payment information</h2>
                   </div>
                   <!--Email-->
                   <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
@@ -103,48 +97,48 @@
 
 
                   <!--Card Details-->
-                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                  <div id="FullName" class="p-4 grid grid-cols-2">
                     <div class = " ">
                       <!-- Card Number-->
                       <div class = "mb-3">
                         <label class = "">Card Number</label><br>
                       </div>
-                      <input type="text" class = " w-72 h-10 border p-1 "name="">
+                      <input type="number" class = "  w-[100%] h-10 border p-1 "name="">
                     </div>
-                    <div class = "w-full h-full mt-5 ">
-                      <img src="https://demo.bosathemes.com/html/travele/assets/images/cards.png">
+                    <div class = "w-full h-full flex justify-center items-end">
+                      <img class="h-10" src="https://demo.bosathemes.com/html/travele/assets/images/cards.png">
                     </div>
                      
                   </div>
 
                  <!-- Card Security-->
-                  <div id="FullName" class="p-4 flex flex-col md:flex-row lg:flex-row gap-x-5 ">
+                  <div id="FullName" class="p-4 grid grid-cols-3 gap-5">
                     <div class = " ">
                       <!-- Exp Date-->
                       <div class = "mb-3">
                         <label class = "">Expiration Date</label><br>
                       </div>
-                      <input type="text" class = " w-36  h-10 border p-1 "name="">
+                      <input type="date" class = " w-[100%]  h-10 border p-1 "name="">
                     </div>
                     <div class = "w-fit ">
                       <!-- Year-->
                       <div class = "mb-3">
-                        <label class = ""></label><br>
-                      </div>
-                      <input type="text" class = "w-36  h-10 border p-1 "name="">
-                    </div>
-                    <div class = "w-fit ">
-                      <!-- First Name-->
-                      <div class = "mb-3">
                         <label class = "">Security Code</label><br>
                       </div>
-                      <input type="text" class = " w-20  h-10 border p-1 "name="">
+                      <input type="number" class = "w-[100%]  h-10 border p-1 "name="">
                     </div>
-                    <div class = " mt-5 flex flex-row w-fit p-3">
-                      <img src="https://demo.bosathemes.com/html/travele/assets/images/icon_ccv.gif" class="w-fit">
-                      <p class="text-sm p-2">Last 3 digits</p>
+
+                    <div class = "w-fit ">
+                      <!-- Year-->
+                      <div class = "mb-3">
+                        <label class = "flex flex-row">
+                          <p class="text-sm">Last 3 digits</p>
+                          <img src="https://demo.bosathemes.com/html/travele/assets/images/icon_ccv.gif" class="h-5" 
+                        </label><br>
+                      </div>
+                      <input type="number" class = "w-[100%]  h-10 border p-1 "name="">
                     </div>
-                     
+               
                   </div>
 
 
@@ -155,9 +149,9 @@
             </div>
             <!--SIDE BAR-->
             <!--SUMMARY BAR-->
-            <div class=" h-fit w-fit">
+            <div class=" h-fit w-full">
               <div class = "bg-gray-100 p-8 w- full h-full mb-10 flex flex-col border-b-4">
-                <div class = "p-5 w-80 m-2 mb-6 bg-emerald-700">
+                <div class = "p-5 w-[100%] m-2 mb-6 bg-emerald-700">
                 <p class ="text-base font-bold uppercase text-white text-center items-center">Summary</p>
                 </div>
               <!--INFO-->
@@ -185,7 +179,7 @@
                
             </div>
             <!--HELP BAR-->
-            <div class = "bg-gray-100 p-8 w- full h-full mb-10 flex flex-col border-b-4">
+            <div class = "bg-gray-100 p-8 w-full h-full mb-10 flex flex-col border-b-4">
               <div class = "w-full h-full justify-center flex-col items-center ">
                 <div class = "flex justify-center flex-col items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-call" width="80" height="80" viewBox="0 0 24 24" stroke-width="1.5" stroke="#424242" fill="none" stroke-linecap="round" stroke-linejoin="round">

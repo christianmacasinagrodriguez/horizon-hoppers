@@ -1336,6 +1336,12 @@ video {
 .bg-opacity-95{
   --tw-bg-opacity: 0.95;
 }
+.bg-opacity-50{
+  --tw-bg-opacity: 0.5;
+}
+.bg-opacity-25{
+  --tw-bg-opacity: 0.25;
+}
 .bg-\[url\(\'https\:\/\/demo\.bosathemes\.com\/html\/travele\/assets\/images\/img16\.jpg\'\)\]{
   background-image: url('https://demo.bosathemes.com/html/travele/assets/images/img16.jpg');
 }

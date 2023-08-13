@@ -16,8 +16,9 @@
     <%- include('../partials/footer.ejs') %>
     <%- include('../partials/arrow-up.ejs') %>
 
-    <script>
+    <script defer>
         // JavaScript to change header background on scroll
+        
         const header = document.getElementById('main-header');
         const topHeader = document.getElementById('top-header');
         const scrollThreshold = 100; // Adjust this value to determine when to change the background color
@@ -114,7 +115,7 @@
         window.addEventListener('scroll', updateHeaderBackground);
         playButton?.addEventListener('click', showVideoPlayer)
         closeIcon?.addEventListener('click', closeVideoPlayer)
-        findTourButton.addEventListener('click', findTour)
+        findTourButton?.addEventListener('click', findTour)
       </script>
 
     

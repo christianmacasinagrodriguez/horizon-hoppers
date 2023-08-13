@@ -21,3 +21,22 @@
     </div>
   </div>
 </div>
+<script defer>
+ 
+
+ function filterTour(param) {
+   let optionItems = document.querySelectorAll('.option-item')
+   let index = -1
+
+   optionItems.forEach(item => {
+     item.classList.add('hidden')
+   })
+   for(idx in optionItems) {
+     if(optionItems[idx].innerText?.toLowerCase().indexOf(param.value?.toLowerCase()) > -1) {
+       optionItems[idx].classList.remove('hidden')
+       
+     } 
+   }
+ }
+
+</script>

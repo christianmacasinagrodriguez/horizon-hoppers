@@ -65,7 +65,7 @@
       
         }
         function findTour(){
-            window.location.href = `/tours/${selectedTour}`
+            window.location.href = `/tours/${groupTitle[0].textContent.toLowerCase()}`
           }
 
         //Tour Filter
@@ -73,8 +73,6 @@
         const optionsContainers = document.querySelectorAll(".option-container");
         const groupTitle = document.querySelectorAll(".group-title");
         const findTourButton = document.getElementById('find-tour-button')
-
-        let selectedTour = ''
 
         selectedItems.forEach((selected, index) => {
           selected.addEventListener("click", () => {
@@ -107,7 +105,6 @@
           items.forEach((item, index) => {
             item.addEventListener('click', () => {
               groupItem.textContent = item.textContent;
-              selectedTour = item.textContent
               input.value = '';
             })
           })

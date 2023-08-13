@@ -26,14 +26,14 @@
                       <div class = "mb-3">
                         <label class = ""> First Name</label><br>
                       </div>
-                      <input type="text" class = " w-[100%] h-10 border p-1 "name="">
+                      <input type="text" class = " w-[100%] h-10 border p-1 "name="" title="First Name" required>
                     </div>
                     <div class = " ">
                       <!-- Last Name-->
                       <div class = "mb-3">
                         <label class = "">Last Name</label><br>
                       </div>
-                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
+                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="" title="Last Name" required>
                     </div>
                      
                   </div>
@@ -46,14 +46,14 @@
                       <div class = "mb-3">
                         <label class = "">Email</label><br>
                       </div>
-                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
+                      <input type="email" class = "  w-[100%] h-10 border p-1 "name="" title="Email">
                     </div>
                     <div class = " ">
                       <!-- Last Name-->
                       <div class = "mb-3">
                         <label class = "">Confirm Email</label><br>
                       </div>
-                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
+                      <input type="email" class = "  w-[100%] h-10 border p-1 "name="" title="Confirm Email">
                     </div>
                      
                   </div>
@@ -65,7 +65,7 @@
                       <div class = "mb-3">
                         <label class = "">Phone</label><br>
                       </div>
-                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="">
+                      <input type="text" class = "  w-[100%] h-10 border p-1 "name="" title="Phone Number" required>
                     </div>   
                   </div>         
                 </form>
@@ -90,7 +90,7 @@
                       <div class = "mb-3">
                         <label class = "">Name on Card</label><br>
                       </div>
-                      <input type="text" class = " w-full h-10 border p-1 "name="">
+                      <input type="text" class = " w-full h-10 border p-1 "name="" title="Name on your card.">
                     </div>
                      
                   </div>
@@ -103,7 +103,7 @@
                       <div class = "mb-3">
                         <label class = "">Card Number</label><br>
                       </div>
-                      <input type="number" class = "  w-[100%] h-10 border p-1 "name="">
+                      <input type="number" class = "  w-[100%] h-10 border p-1 "name="" title="Card Number">
                     </div>
                     <div class = "w-full h-full flex justify-center items-end">
                       <img class="h-10" src="https://demo.bosathemes.com/html/travele/assets/images/cards.png">
@@ -118,25 +118,25 @@
                       <div class = "mb-3">
                         <label class = "">Expiration Date</label><br>
                       </div>
-                      <input type="date" class = " w-[100%]  h-10 border p-1 "name="">
+                      <input type="date" class = " w-[100%]  h-10 border p-1 "name="" title="Card expiration date.">
                     </div>
                     <div class = "w-fit ">
                       <!-- Year-->
                       <div class = "mb-3">
                         <label class = "">Security Code</label><br>
                       </div>
-                      <input type="number" class = "w-[100%]  h-10 border p-1 "name="">
+                      <input type="number" class = "w-[100%]  h-10 border p-1 "name="" title="Card security code/CVV.">
                     </div>
 
                     <div class = "w-fit ">
                       <!-- Year-->
                       <div class = "mb-3">
                         <label class = "flex flex-row">
-                          <p class="text-sm">Last 3 digits</p>
+                          <p class="text-sm">Last 4 digits</p>
                           <img src="https://demo.bosathemes.com/html/travele/assets/images/icon_ccv.gif" class="h-5" 
                         </label><br>
                       </div>
-                      <input type="number" class = "w-[100%]  h-10 border p-1 "name="">
+                      <input type="number" class = "w-[100%]  h-10 border p-1 "name="" title="Last 4 digits of the card number.">
                     </div>
                
                   </div>
@@ -200,7 +200,7 @@
               </div>
             </div> 
             <div class="text-center mt-12 mb-6 h-full">
-              <%- include('../components/atoms/cta-book-now.ejs', {content: "Checkout", redirect: "/booking", style: "uppercase font-bold shadow-inner shadow-emerald-900 text-white font-medium md:font-bold p-10 rounded-md bg-emerald-700 mt-4 uppercase h-full"})%>
+              <%- include('../components/atoms/cta-book-now.ejs', {content: "Continue Reading", redirect: "/booking", style: "uppercase font-bold shadow-inner shadow-emerald-900 text-white font-medium md:font-bold p-10 rounded-md bg-emerald-700 mt-4 uppercase h-full"})%>
             </div>                
             
 

@@ -141,7 +141,7 @@ const destinations = [
     discounted: true,
     discount: 10,
     popular: true,
-    pricePerPerson: 25999, 
+    pricePerPerson: 2599, 
     dayNightFormat: '8D/7N', 
     numberOfPeople: 8, 
     location: 'Maldives',  
